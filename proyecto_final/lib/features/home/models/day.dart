@@ -7,8 +7,10 @@ class Day {
 
   int dayNumber;
   String month="";
+  String weekday="";
   List<Task> dayTaskList;
+  List<Task> pendingTasks;
 
-Day({required this.dayNumber, required this.month, required this.dayTaskList});
+Day({required this.dayNumber, required this.month, required this.dayTaskList, required this.weekday, required this.pendingTasks});
 
 }

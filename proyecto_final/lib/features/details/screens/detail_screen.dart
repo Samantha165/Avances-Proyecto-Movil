@@ -1,7 +1,6 @@
 
 
 import 'package:proyecto_final/features/add/screens/add_screen.dart';
-import 'package:proyecto_final/features/details/widgets/add_card.dart';
 
 import 'package:proyecto_final/features/details/widgets/interactive_task_card.dart';
 import 'package:proyecto_final/features/home/models/day.dart';
@@ -29,7 +28,7 @@ body: Padding(
 
       Text(date.dayNumber.toString(), style: TextStyle(fontSize: 30, fontWeight: FontWeight(30)),),
           Text(date.month, style: TextStyle(fontSize: 15),),
-          Text("Lunes", style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
+          Text(date.weekday, style: TextStyle(fontWeight: FontWeight.bold, fontSize: 15),),
       
       //DateCard(day: date),
       SizedBox(height: 12,),

@@ -1,7 +1,5 @@
 
-import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-import 'package:flutter/widgets.dart';
 
 import 'package:proyecto_final/features/home/models/task.dart';
 
@@ -34,11 +32,14 @@ bool isCompleted = false;
         onPressed: (){
           setState(() {
             isCompleted = !isCompleted;
+            widget.task.isCompleted = !widget.task.isCompleted;
           });
           }, 
         icon: Icon(
         isCompleted ? Icons.check : Icons.radio_button_unchecked, 
         color: isCompleted ? Colors.green : Colors.grey,)),
+
+        subtitle: Text(widget.task.description),
     )
 
     );
